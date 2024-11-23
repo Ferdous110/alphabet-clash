@@ -1,4 +1,11 @@
 
+
+function continueGame() {
+  const alphabet = getARandomAlphabet();
+  
+}
+
+
 function play() {
 
   // const homeScreen = document.getElementById('home-screen');
@@ -8,6 +15,7 @@ function play() {
   // playGroundSection.classList.remove('hidden');
   hideElementById("home-screen");
   showElementById("play-ground");
+  continueGame();
 
 }
 
