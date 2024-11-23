@@ -24,6 +24,12 @@ function handleKeyboardButtonPress(event) {
 
   } else {
     console.log("you missed. you lost a life");
+    const currentLifeElement = document.getElementById("current-life");
+    const currentLifeText = currentLifeElement.innerText;
+    const currentLife = parseInt(currentLifeText);
+    const newLife = currentLife - 1;
+
+    currentLifeElement.innerText = newLife; 
   }
 }
 // captupe keyboard key press
